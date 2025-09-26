@@ -2,32 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI-Powered VR Safety Training</title>
 </head>
-<body style="margin:0; font-family: Arial, sans-serif; background:#f8f9fb;">
+<body style="margin:0; font-family: Arial, sans-serif; background:#f8f9fb; line-height:1.5;">
 
-  <!-- Header -->
-  <header style="text-align:center; padding:10px 20px; background:#fff;">
-    <h1 style="font-size:35px; font-weight:bold; margin:0; color:#a60a8f;">
+  <!-- Executive Briefing Header -->
+  <section style="background:#00008b; color:#fff; padding:clamp(60px, 10vw, 100px) 20px; text-align:center; position:relative; border-bottom:4px solid #ffcc00;">
+    <!-- Decorative Accent -->
+    <div style="position:absolute; top:0; left:0; width:100%; height:8px; background:linear-gradient(to right, #ffcc00, transparent);"></div>
+    
+    <!-- Headline Card -->
+    <div style="background:rgba(255,255,255,0.15); padding:clamp(30px, 5vw, 40px); border-radius:20px; margin-bottom:clamp(20px, 4vw, 30px); box-shadow:0 12px 30px rgba(0,0,0,0.5); transition:transform 0.3s ease, box-shadow 0.3s ease; max-width:clamp(600px, 80vw, 900px); margin-left:auto; margin-right:auto;">
+      <h1 style="font-size:clamp(28px, 5vw, 35px); font-weight:900; margin:0; line-height:1.3; color:#ffcc00;">
+        Subscribe to the AI Executive Briefing Today!
+      </h1>
+    </div>
+
+    <!-- Paragraph Card -->
+    <div style="background:rgba(255,255,255,0.15); padding:clamp(20px, 4vw, 30px); border-radius:20px; margin-bottom:clamp(30px, 5vw, 40px); box-shadow:0 12px 30px rgba(0,0,0,0.5); transition:transform 0.3s ease, box-shadow 0.3s ease; max-width:clamp(500px, 70vw, 800px); margin-left:auto; margin-right:auto;">
+      <p style="font-size:clamp(16px, 3vw, 20px); line-height:1.8; margin:0;">
+        Stay ahead with our bi-weekly Executive Briefing, packed with critical insights delivered straight to your inbox—free for the first 90 days!
+      </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(clamp(250px, 40vw, 280px), 1fr)); gap:clamp(15px, 3vw, 25px); max-width:clamp(800px, 90vw, 1200px); margin:0 auto;">
+      <div style="background:rgba(255,255,255,0.15); padding:clamp(20px, 4vw, 30px); border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,0.5); transition:transform 0.3s ease, box-shadow 0.3s ease; cursor:pointer; position:relative; overflow:hidden;">
+        <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#ffcc00; transition:width 0.3s ease;"></div>
+        <h3 style="color:#ffcc00; font-size:clamp(18px, 3.5vw, 24px); font-weight:900; margin-bottom:clamp(10px, 2vw, 15px);">Easy to Read</h3>
+        <p style="font-size:clamp(14px, 2.5vw, 16px); line-height:1.7; margin:0;">Concise, clear, and designed for busy professionals.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.15); padding:clamp(20px, 4vw, 30px); border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,0.5); transition:transform 0.3s ease, box-shadow 0.3s ease; cursor:pointer; position:relative; overflow:hidden;">
+        <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#ffcc00; transition:width 0.3s ease;"></div>
+        <h3 style="color:#ffcc00; font-size:clamp(18px, 3.5vw, 24px); font-weight:900; margin-bottom:clamp(10px, 2vw, 15px);">Interactive Format</h3>
+        <p style="font-size:clamp(14px, 2.5vw, 16px); line-height:1.7; margin:0;">Engage with dynamic content, including embedded videos to bring insights to life.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.15); padding:clamp(20px, 4vw, 30px); border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,0.5); transition:transform 0.3s ease, box-shadow 0.3s ease; cursor:pointer; position:relative; overflow:hidden;">
+        <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:#ffcc00; transition:width 0.3s ease;"></div>
+        <h3 style="color:#ffcc00; font-size:clamp(18px, 3.5vw, 24px); font-weight:900; margin-bottom:clamp(10px, 2vw, 15px);">Flexible Access</h3>
+        <p style="font-size:clamp(14px, 2.5vw, 16px); line-height:1.7; margin:0;">Printable for offline reading and optimized for seamless viewing on mobile devices.</p>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="#subscribe" style="display:inline-block; margin-top:clamp(30px, 5vw, 50px); background:#ffcc00; color:#3b0ca0; font-weight:900; padding:clamp(15px, 3vw, 20px) clamp(30px, 6vw, 50px); border-radius:50px; font-size:clamp(16px, 3vw, 22px); text-decoration:none; transition:all 0.3s ease; box-shadow:0 12px 30px rgba(0,0,0,0.5); position:relative; overflow:hidden;">
+      <span style="position:relative; z-index:1;">Don’t miss out—subscribe now!</span>
+      <div style="position:absolute; top:0; left:-100%; width:100%; height:100%; background:rgba(255,255,255,0.2); transition:left 0.3s ease;"></div>
+    </a>
+
+    <!-- Inline Hover Styles -->
+    <style>
+      div[style*="cursor:pointer"]:hover { transform: translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.6); }
+      div[style*="cursor:pointer"]:hover > div[style*="height:4px"] { width:50%; }
+      a[href="#subscribe"]:hover { transform: translateY(-5px); box-shadow:0 20px 40px rgba(0,0,0,0.6); }
+      a[href="#subscribe"]:hover > div { left:0; }
+    </style>
+  </section>
+
+  <!-- Header (Below Executive Briefing) -->
+  <header style="text-align:center; padding:clamp(15px, 3vw, 20px); background:#fff; margin:clamp(20px, 4vw, 30px); border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); max-width:clamp(700px, 90vw, 1200px); margin-left:auto; margin-right:auto;">
+    <h1 style="font-size:clamp(28px, 5vw, 38px); font-weight:900; margin:0; color:#a60a8f;">
       AI-Powered Virtual Reality Simulations
     </h1>
-    <h2 style="font-size:35px; font-weight:bold; margin-top:10px; color:#333;">
+    <h2 style="font-size:clamp(24px, 4vw, 32px); font-weight:700; margin-top:clamp(8px, 2vw, 10px); color:#333;">
       for Workforce Training in Hazardous Environments
     </h2>
   </header>
 
   <!-- Hero Section -->
-  <div style="position:relative; height:500px; margin-top: 5px; margin:0px 30px; border-radius:12px; overflow:hidden; background:url('hero.png') center/cover no-repeat;">
-  <!-- Overlay replaced with image -->
-  <img src="assets/hero.png" alt="Hero" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;" />
-
-    <!-- Text Card -->
-    <div style="position:absolute; inset:0; display:flex; align-items:center; padding:30px;">
-      <div style="background:#3b0ca0; color:#fff; padding:20px; max-width:350px; border-radius:10px;">
-        <h3 style="font-size:35px; font-weight:bold; margin-bottom:15px;">
+  <div style="position:relative; height:clamp(300px, 50vw, 600px); margin:clamp(20px, 4vw, 30px); border-radius:20px; overflow:hidden; background:url('hero.png') center/cover no-repeat;">
+    <img src="assets/hero.png" alt="Hero" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;" />
+    <div style="position:absolute; inset:0; display:flex; align-items:center; padding:clamp(20px, 5vw, 40px);">
+      <div style="background:#3b0ca0; color:#fff; padding:clamp(20px, 4vw, 30px); max-width:clamp(300px, 45vw, 400px); border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.4);">
+        <h3 style="font-size:clamp(28px, 5vw, 38px); font-weight:900; margin-bottom:20px;">
           Revolutionizing Safety Training with AI and VR
         </h3>
-        <p style="font-size:18px; line-height:1.6;">
+        <p style="font-size:clamp(16px, 3vw, 20px); line-height:1.7;">
           AI-driven virtual reality (VR) simulations are transforming workforce training in high-risk 
           environments by offering realistic, risk-free learning experiences. This approach is 
           particularly beneficial for industries like oil, gas, and mining.
@@ -37,107 +88,124 @@
   </div>
 
   <!-- Two Column Section -->
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; padding:30px;">
-
-    <!-- Left Column -->
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(clamp(300px, 45vw, 500px), 1fr)); gap:clamp(20px, 4vw, 40px); padding:clamp(20px, 4vw, 40px) clamp(15px, 3vw, 30px); max-width:clamp(800px, 90vw, 1200px); margin:0 auto;">
     <div>
-      <!-- Featured Technology -->
-      <div style="background:#fff; padding:20px; border-radius:10px; margin-bottom:20px;">
-        <h3 style=" color: #333; font-size:35px; font-weight:bold; margin-bottom:10px;">
+      <div style="background:#fff; padding:clamp(20px, 4vw, 30px); border-radius:15px; margin-bottom:clamp(20px, 4vw, 30px); box-shadow:0 8px 20px rgba(0,0,0,0.1);">
+        <h3 style="color:#333; font-size:clamp(28px, 5vw, 38px); font-weight:900; margin-bottom:15px;">
           Featured <span style="color:#b00080;">Technology</span>
         </h3>
-        <p style="font-size:20px; color:#001f3f; line-height:1.6;">
+        <p style="font-size:clamp(16px, 3.5vw, 22px); color:#001f3f; line-height:1.7;">
           Advanced AI models, including reinforcement learning, power VR environments, 
           enhancing simulation realism and decision-making scenarios.
         </p>
       </div>
-
-      <!-- Industry Impact -->
-      <div style="background:#fff; padding:20px; border-radius:10px;">
-        <h3 style=" color: #333; font-size:35px; font-weight:bold; margin-bottom:10px;">
+      <div style="background:#fff; padding:clamp(20px, 4vw, 30px); border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
+        <h3 style="color:#333; font-size:clamp(28px, 5vw, 38px); font-weight:900; margin-bottom:15px;">
           Industry <span style="color:#b00080;">Impact</span>
         </h3>
-        <p style="font-size:20px; color:#001f3f; line-height:1.6;">
-          A 2025 survey predicts that <span style="font-weight:bold; color:#b00080;">40%</span> of 
+        <p style="font-size:clamp(16px, 3.5vw, 22px); color:#001f3f; line-height:1.7;">
+          A 2025 survey predicts that <span style="font-weight:900; color:#b00080;">40%</span> of 
           high-risk industries will adopt AI-VR training by 2027, leading to improved safety 
           compliance and operational efficiency.
         </p>
       </div>
     </div>
 
-    <!-- Right Column -->
     <div>
-      <h3 style="font-size:20px; padding:12px 40px; border-radius: 20px; background-color: #ffcccc9e; font-weight:bold; margin-bottom:20px; color:#3b0ca0;">Key Highlights</h3>
-
-      <!-- Highlight 1 -->
-      <div style="display:flex; gap:15px; margin-bottom:20px;">
-        <div style=" width:70px; height:70px; display:flex; border:2px solid #7d3cff; border-radius:12px; align-items:center; justify-content:center;">
-          <img src="assets/realistic.png" style="width:100px; height:100px;" />
+      <h3 style="font-size:clamp(18px, 3.5vw, 22px); padding:clamp(10px, 2vw, 15px) clamp(30px, 5vw, 50px); border-radius:50px; background:#ffcccc9e; font-weight:900; margin-bottom:clamp(20px, 4vw, 30px); color:#3b0ca0; text-align:center;">Key Highlights</h3>
+      <div style="display:grid; gap:clamp(15px, 3vw, 20px);">
+        <div style="display:flex; gap:clamp(15px, 3vw, 20px); align-items:flex-start;">
+          <div style="flex-shrink:0; width:clamp(60px, 10vw, 80px); height:clamp(60px, 10vw, 80px); background:#fff; border:3px solid #7d3cff; border-radius:15px; display:flex; align-items:center; justify-content:center; transition:transform 0.3s ease;">
+            <img src="assets/realistic.png" style="width:clamp(50px, 8vw, 60px); height:clamp(50px, 8vw, 60px); object-fit:contain;" />
+          </div>
+          <div>
+            <h4 style="color:#b00080; font-size:clamp(18px, 3.5vw, 22px); font-weight:900; margin:0 0 clamp(8px, 2vw, 10px);">Realistic Scenarios:</h4>
+            <p style="font-size:clamp(14px, 2.5vw, 16px); color:#001f3f; line-height:1.7;">
+              AI generates dynamic simulations of hazardous situations, such as gas leaks or explosions, preparing workers for real-life challenges.
+            </p>
+          </div>
         </div>
-        <div>
-          <h4 style="color:#b00080; font-size:20px; font-weight:bold; margin:0 0 8px;">Realistic Scenarios:</h4>
-          <p style="font-size:14px; color:#001f3f; line-height:1.6;">
-            AI generates dynamic simulations of hazardous situations, such as gas leaks or explosions, preparing workers for real-life challenges.
-          </p>
+        <div style="display:flex; gap:clamp(15px, 3vw, 20px); align-items:flex-start;">
+          <div style="flex-shrink:0; width:clamp(60px, 10vw, 80px); height:clamp(60px, 10vw, 80px); background:#fff; border:3px solid #7d3cff; border-radius:15px; display:flex; align-items:center; justify-content:center; transition:transform 0.3s ease;">
+            <img src="assets/personalized.png" style="width:clamp(50px, 8vw, 60px); height:clamp(50px, 8vw, 60px); object-fit:contain;" />
+          </div>
+          <div>
+            <h4 style="color:#3b0ca0; font-size:clamp(18px, 3.5vw, 22px); font-weight:900; margin:0 0 clamp(8px, 2vw, 10px);">Personalized Learning:</h4>
+            <p style="font-size:clamp(14px, 2.5vw, 16px); color:#001f3f; line-height:1.7;">
+              Machine learning tailors training to individual skill levels, enhancing knowledge retention by 30%.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <!-- Highlight 2 -->
-      <div style="display:flex; gap:15px; margin-bottom:20px;">
-        <div style="flex-shrink:0; width:70px; height:70px; background:#fff; border:2px solid #7d3cff; border-radius:12px; display:flex; align-items:center; justify-content:center;">
-          <img src="assets/personalized.png" style="width:100px; height:100px;" />
+        <div style="display:flex; gap:clamp(15px, 3vw, 20px); align-items:flex-start;">
+          <div style="flex-shrink:0; width:clamp(60px, 10vw, 80px); height:clamp(60px, 10vw, 80px); background:#fff; border:3px solid #7d3cff; border-radius:15px; display:flex; align-items:center; justify-content:center; transition:transform 0.3s ease;">
+            <img src="assets/risk.png" style="width:clamp(50px, 8vw, 60px); height:clamp(50px, 8vw, 60px); object-fit:contain;" />
+          </div>
+          <div>
+            <h4 style="color:#b00080; font-size:clamp(18px, 3.5vw, 22px); font-weight:900; margin:0 0 clamp(8px, 2vw, 10px);">Risk Mitigation:</h4>
+            <p style="font-size:clamp(14px, 2.5vw, 16px); color:#001f3f; line-height:1.7;">
+              VR training removes physical dangers, helping reduce workplace incidents by up to 20% in pilot programs.
+            </p>
+          </div>
         </div>
-        <div>
-          <h4 style="color:#3b0ca0; font-size:20px; font-weight:bold; margin:0 0 8px;">Personalized Learning:</h4>
-          <p style="font-size:14px; color:#001f3f; line-height:1.6;">
-            Machine learning tailors training to individual skill levels, enhancing knowledge retention by 30%.
-          </p>
-        </div>
-      </div>
-
-      <!-- Highlight 3 -->
-      <div style="display:flex; gap:15px; margin-bottom:20px;">
-        <div style="flex-shrink:0; width:70px; height:70px; background:#fff; border:2px solid #7d3cff; border-radius:12px; display:flex; align-items:center; justify-content:center;">
-          <img src="assets/risk.png" style="width:100px; height:100px;" />
-        </div>
-        <div>
-          <h4 style="color:#b00080; font-size:20px; font-weight:bold; margin:0 0 8px;">Risk Mitigation:</h4>
-          <p style="font-size:14px; color:#001f3f; line-height:1.6;">
-            VR training removes physical dangers, helping reduce workplace incidents by up to 20% in pilot programs.
-          </p>
-        </div>
-      </div>
-
-      <!-- Highlight 4 -->
-      <div style="display:flex; gap:15px;">
-        <div style="flex-shrink:0; width:70px; height:70px; background:#fff; border:2px solid #7d3cff; border-radius:12px; display:flex; align-items:center; justify-content:center;">
-          <img src="assets/cost.png" style="width:100px; height:100px;" />
-        </div>
-        <div>
-          <h4 style="color:#3b0ca0; font-size:20px; font-weight:bold; margin:0 0 8px;">Cost Efficiency:</h4>
-          <p style="font-size:14px; color:#001f3f; line-height:1.6;">
-            Virtual training cuts travel and equipment costs by 15-25% compared to traditional methods.
-          </p>
+        <div style="display:flex; gap:clamp(15px, 3vw, 20px); align-items:flex-start;">
+          <div style="flex-shrink:0; width:clamp(60px, 10vw, 80px); height:clamp(60px, 10vw, 80px); background:#fff; border:3px solid #7d3cff; border-radius:15px; display:flex; align-items:center; justify-content:center; transition:transform 0.3s ease;">
+            <img src="assets/cost.png" style="width:clamp(50px, 8vw, 60px); height:clamp(50px, 8vw, 60px); object-fit:contain;" />
+          </div>
+          <div>
+            <h4 style="color:#3b0ca0; font-size:clamp(18px, 3.5vw, 22px); font-weight:900; margin:0 0 clamp(8px, 2vw, 10px);">Cost Efficiency:</h4>
+            <p style="font-size:clamp(14px, 2.5vw, 16px); color:#001f3f; line-height:1.7;">
+              Virtual training cuts travel and equipment costs by 15-25% compared to traditional methods.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <style>
+      div[style*="width:clamp(60px, 10vw, 80px)"]:hover { transform: scale(1.1); }
+    </style>
   </div>
 
   <!-- Footer -->
-  <footer style="background: linear-gradient(to right, #00008b, #7f0080); color:#fff; padding:12px 30px;">
-    <div style="display:flex; align-items:center; justify-content:space-between;">
-      <div style="display:flex; align-items:center; gap:15px;">
-        <span style="font-size:20px; font-weight:bold;">For more content like and follow me:</span>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <img src="assets/avatar.png" style="width:45px; height:45px; border-radius:50%; border:2px solid #fff;" />
-          <span style="font-weight:bold;">@bertblevins</span>
+  <footer style="background: linear-gradient(to right, #00008b, #7f0080); color:#fff; padding:clamp(15px, 3vw, 20px) clamp(15px, 3vw, 30px); border-radius:20px 20px 0 0;">
+    <div style="display:flex; align-items:center; justify-content:space-between; max-width:clamp(800px, 90vw, 1200px); margin:0 auto;">
+      <div style="display:flex; align-items:center; gap:clamp(10px, 3vw, 20px);">
+        <span style="font-size:clamp(16px, 3vw, 22px); font-weight:900;">For more content like and follow me:</span>
+        <div style="display:flex; align-items:center; gap:clamp(8px, 2vw, 12px);">
+          <img src="assets/avatar.png" style="width:clamp(40px, 8vw, 50px); height:clamp(40px, 8vw, 50px); border-radius:50%; border:3px solid #fff; transition:transform 0.3s ease;" />
+          <span style="font-weight:900;">@bertblevins</span>
         </div>
       </div>
-      <div style="font-size:20px; font-weight:bold;">
-        <span style="color:#fff;">INCGPT<span style=" font-size: 10px; color:#fff;">.COM</span>
+      <div style="font-size:clamp(16px, 3vw, 22px); font-weight:900;">
+        <span style="color:#fff;">INCGPT<span style="font-size:clamp(8px, 1.5vw, 12px); color:#fff;">.COM</span></span>
       </div>
     </div>
+    <style>
+      img[src="assets/avatar.png"]:hover { transform: scale(1.1); }
+    </style>
   </footer>
 
+  <!-- Responsive Adjustments -->
+  <style>
+    @media (max-width: 1024px) {
+      div[style*="grid-template-columns:repeat(auto-fit, minmax(clamp(300px, 45vw, 500px), 1fr))"] { grid-template-columns:1fr; }
+      div[style*="height:clamp(300px, 50vw, 600px)"] { height:clamp(250px, 45vw, 400px); }
+      div[style*="max-width:clamp(300px, 45vw, 400px)"] { max-width:100%; }
+    }
+    @media (max-width: 768px) {
+      h1[style*="font-size:clamp(28px, 5vw, 42px)"] { font-size:clamp(24px, 4.5vw, 32px); }
+      h3[style*="font-size:clamp(28px, 5vw, 38px)"] { font-size:clamp(22px, 4vw, 30px); }
+      a[href="#subscribe"] { padding:clamp(12px, 2.5vw, 15px) clamp(25px, 5vw, 40px); font-size:clamp(14px, 2.5vw, 18px); }
+      div[style*="padding:clamp(20px, 5vw, 40px)"] { padding:clamp(15px, 4vw, 30px); }
+    }
+    @media (max-width: 480px) {
+      div[style*="height:clamp(300px, 50vw, 600px)"] { height:clamp(200px, 40vw, 300px); }
+      h1[style*="font-size:clamp(28px, 5vw, 42px)"] { font-size:clamp(20px, 4vw, 28px); }
+      h3[style*="font-size:clamp(28px, 5vw, 38px)"] { font-size:clamp(20px, 3.5vw, 26px); }
+      p[style*="font-size:clamp(16px, 3vw, 20px)"] { font-size:clamp(14px, 2.5vw, 16px); }
+      div[style*="padding:clamp(20px, 4vw, 30px)"] { padding:clamp(15px, 3vw, 20px); }
+      div[style*="width:clamp(60px, 10vw, 80px)"] { width:clamp(50px, 8vw, 60px); height:clamp(50px, 8vw, 60px); }
+      img[style*="width:clamp(50px, 8vw, 60px)"] { width:clamp(40px, 6vw, 50px); height:clamp(40px, 6vw, 50px); }
+    }
+  </style>
 </body>
 </html>
